@@ -14,11 +14,8 @@
     --accent:     #2f5d62;
     --measure:    64ch;
   }
-
   *, *::before, *::after { box-sizing: border-box; }
-
   html { -webkit-text-size-adjust: 100%; }
-
   body {
     margin: 0;
     background: var(--paper);
@@ -28,39 +25,11 @@
     line-height: 1.62;
     text-rendering: optimizeLegibility;
   }
-
-  .sheet {
-    max-width: 46rem;
-    margin: 0 auto;
-    padding: 3.5rem 1.5rem 6rem;
-  }
-
-  header.masthead {
-    border-bottom: 2px solid var(--ink);
-    padding-bottom: 1.25rem;
-    margin-bottom: 2.5rem;
-  }
-
-  h1 {
-    font-size: clamp(1.9rem, 5vw, 2.6rem);
-    line-height: 1.12;
-    font-weight: 600;
-    letter-spacing: -0.012em;
-    margin: 0 0 0.5rem;
-  }
-
-  .standfirst {
-    margin: 0;
-    max-width: var(--measure);
-    color: var(--ink-soft);
-    font-size: 1.05rem;
-  }
-
-  .issue {
-    margin-top: 1.4rem;
-    font-size: 0.9rem;
-    color: var(--ink-soft);
-  }
+  .sheet { max-width: 46rem; margin: 0 auto; padding: 3.5rem 1.5rem 6rem; }
+  header.masthead { border-bottom: 2px solid var(--ink); padding-bottom: 1.25rem; margin-bottom: 2.5rem; }
+  h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); line-height: 1.12; font-weight: 600; letter-spacing: -0.012em; margin: 0 0 0.5rem; }
+  .standfirst { margin: 0; max-width: var(--measure); color: var(--ink-soft); font-size: 1.05rem; }
+  .issue { margin-top: 1.4rem; font-size: 0.9rem; color: var(--ink-soft); }
   .issue span + span::before {
     content: "";
     display: inline-block;
@@ -70,80 +39,22 @@
     margin: 0 0.7rem;
     vertical-align: -0.06em;
   }
-
-  section {
-    display: grid;
-    grid-template-columns: 2.75rem 1fr;
-    gap: 0 1rem;
-    padding-top: 2.6rem;
-  }
+  section { display: grid; grid-template-columns: 2.75rem 1fr; gap: 0 1rem; padding-top: 2.6rem; }
   section + section { border-top: 1px solid var(--rule); }
-
-  .num {
-    grid-column: 1;
-    font-size: 0.95rem;
-    color: var(--accent);
-    padding-top: 0.42rem;
-    font-variant-numeric: tabular-nums;
-  }
-
+  .num { grid-column: 1; font-size: 0.95rem; color: var(--accent); padding-top: 0.42rem; font-variant-numeric: tabular-nums; }
   .body { grid-column: 2; max-width: var(--measure); }
-
-  h2 {
-    font-size: 1.3rem;
-    font-weight: 600;
-    line-height: 1.25;
-    letter-spacing: -0.006em;
-    margin: 0 0 0.7rem;
-  }
-
-  h3 {
-    font-size: 1.02rem;
-    font-weight: 600;
-    margin: 1.8rem 0 0.5rem;
-  }
-
+  h2 { font-size: 1.3rem; font-weight: 600; line-height: 1.25; letter-spacing: -0.006em; margin: 0 0 0.7rem; }
+  h3 { font-size: 1.02rem; font-weight: 600; margin: 1.8rem 0 0.5rem; }
   p { margin: 0 0 1rem; }
   p:last-child, ul:last-child { margin-bottom: 0; }
-
   ul { margin: 0 0 1rem; padding-left: 1.15rem; }
   li { margin-bottom: 0.35rem; }
-
   a { color: var(--accent); text-underline-offset: 0.16em; }
-  a:focus-visible, :focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 3px;
-  }
-
-  .basis {
-    border-left: 3px solid var(--accent);
-    padding: 0.15rem 0 0.15rem 1rem;
-    margin: 1.2rem 0;
-    color: var(--ink-soft);
-    font-size: 0.97rem;
-  }
+  a:focus-visible, :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .basis { border-left: 3px solid var(--accent); padding: 0.15rem 0 0.15rem 1rem; margin: 1.2rem 0; color: var(--ink-soft); font-size: 0.97rem; }
   .basis strong { color: var(--ink); font-weight: 600; }
-
-  .fill {
-    background: #f2e9c9;
-    padding: 0 0.18em;
-    border-radius: 2px;
-  }
-
-  address {
-    font-style: normal;
-    margin: 0 0 1rem;
-  }
-
-  footer {
-    margin-top: 3.5rem;
-    padding-top: 1.5rem;
-    border-top: 2px solid var(--ink);
-    max-width: var(--measure);
-    color: var(--ink-soft);
-    font-size: 0.94rem;
-  }
-
+  address { font-style: normal; margin: 0 0 1rem; }
+  footer { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 2px solid var(--ink); max-width: var(--measure); color: var(--ink-soft); font-size: 0.94rem; }
   @media (max-width: 34rem) {
     section { grid-template-columns: 1fr; gap: 0; }
     .num { grid-column: 1; padding-top: 0; margin-bottom: 0.3rem; }
@@ -157,9 +68,7 @@
   <header class="masthead">
     <h1>Privacy Notice</h1>
     <p class="standfirst">How I handle personal data in connection with my 3D model licences and my community Discord server.</p>
-    <p class="issue">
-      <span>Version 1.0</span><span>Effective <span September 15, 2026>[Date]</span></span>
-    </p>
+    <p class="issue"><span>Version 1.0</span><span>Effective 9 September 2026</span></p>
   </header>
 
   <section>
@@ -169,10 +78,10 @@
       <p>The controller for the processing described here is:</p>
       <address>
         Ruven Bals<br>
-        <span Ruven Bals>[Company name]</span><br>
-        <span Sudetenlandstraße 23>[Street and number]</span><br>
-        <span 35415 Pohlheim>[Postcode and city]</span>, Germany<br>
-        Email: RuvenBals@pm.me>[Email address]</span>
+        Ruven Bals<br>
+        Sudetenlandstraße 23<br>
+        35415 Pohlheim, Germany<br>
+        Email: RuvenBals@pm.me
       </address>
       <p>If you have any question about how your data is handled, write to that address and I will answer it myself.</p>
     </div>
@@ -205,7 +114,7 @@
         <strong>Legal basis.</strong> Article 6(1)(b) GDPR, because the check forms part of performing the licence agreement, and Article 6(1)(f) GDPR, because I have a legitimate interest in enforcing the terms under which my work is used.
       </div>
       <h3>How long I keep it</h3>
-      <p>Information collected for a compliance check is deleted once the matter is closed, and at the latest <span class="fill">[12]</span> months afterwards. Where a dispute is unresolved, I keep it until that dispute is settled. Statutory retention periods under German commercial and tax law remain unaffected.</p>
+      <p>Information collected for a compliance check is deleted once the matter is closed, and at the latest 12 months afterwards. Where a dispute is unresolved, I keep it until that dispute is settled. Statutory retention periods under German commercial and tax law remain unaffected.</p>
     </div>
   </section>
 
@@ -237,10 +146,11 @@
     <div class="num">6</div>
     <div class="body">
       <h2>This website</h2>
-      <p>This page is hosted by <span class="fill">[Hosting provider, address]</span>. When you open it, the server records the usual technical data: your IP address, the time of the request, the page requested, the referring page, and your browser and operating system. This is needed to deliver the page and to keep the server secure.</p>
-      <p>The page loads no fonts, scripts or resources from third parties, sets no cookies, and does not track you.</p>
+      <p>This page is hosted by GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. When you open it, the hosting provider's servers record the usual technical data: your IP address, the time of the request, the page requested, the referring page, and your browser and operating system. This is needed to deliver the page and to keep it secure.</p>
+      <p>That data is processed by the hosting provider under its own responsibility and according to its own retention periods. I have no access to these logs and cannot influence how long they are kept. Details are set out in the hosting provider's privacy policy.</p>
+      <p>The page itself loads no fonts, scripts or resources from third parties, sets no cookies, and does not track you.</p>
       <div class="basis">
-        <strong>Legal basis.</strong> Article 6(1)(f) GDPR — my legitimate interest in a working, secure website. Server logs are deleted after <span class="fill">[7]</span> days.
+        <strong>Legal basis.</strong> Article 6(1)(f) GDPR — my legitimate interest in making this notice available on a working, secure website.
       </div>
     </div>
   </section>
@@ -263,7 +173,8 @@
     <div class="num">8</div>
     <div class="body">
       <h2>Transfers outside the EU</h2>
-      <p>Discord processes data in the United States. That transfer is based on the European Commission's standard contractual clauses together with the EU–US Data Privacy Framework. If you would rather your data stayed within the EU, do not join the Discord server — everything else here runs without a transfer.</p>
+      <p>Discord processes data in the United States. That transfer is based on the European Commission's standard contractual clauses together with the EU–US Data Privacy Framework. Joining the Discord server is voluntary.</p>
+      <p>The provider hosting this page is also located outside the European Union. That transfer is likewise based on the standard contractual clauses and, where the provider is certified under it, on the EU–US Data Privacy Framework. Opening this page transmits your IP address to that provider; there is no way to read the page without it.</p>
     </div>
   </section>
 
@@ -282,7 +193,7 @@
       <h3>Right to object</h3>
       <p>Where I rely on legitimate interests, you can object to the processing on grounds relating to your particular situation (Article 21). I will then stop unless I can show compelling grounds that override your interests.</p>
       <h3>Complaints</h3>
-      <p>You can complain to a data protection supervisory authority, either in the country where you live or where I am established. The authority responsible for me is <span class="fill">[competent authority for your German state]</span>.</p>
+      <p>You can complain to a data protection supervisory authority, either in the country where you live or where I am established. The authority responsible for me is Der Hessische Beauftragte für Datenschutz und Informationsfreiheit.</p>
       <p>Requests are free and I answer within one month.</p>
     </div>
   </section>
